@@ -16,36 +16,39 @@ export default function Home() {
   const [index, setIndex] = React.useState('0');
   const r = React.useRef(1);
   return (
-    <View style={estilo.container}>
-      <ImageBackground
-        source={require('../../assets/fundo.jpg')}
-        style={estilo.fundoimg}
-        resizeMode="cover">
-        <View style={{ height: 300 }}>
+    <View style={estilo.container_azul}>
+      <View style={estilo.container_azul}>
+        <Text style={estilo.titulo_home}>Jago</Text>
+        <Text style={estilo.subtitulo_home}>Ready you go!</Text>
+        <View style={estilo.blocoEstilo} >
           <Carousel
             timingConfig={{ duration: 500 }}
             autoPlayInterval={5000}
-            autoPlay={true} 
+            autoPlay={true}
             ref={r}
-            mode="default"
+            mode="parallax"
             width={width}
             data={data}
-            parallaxScrollingScale={0.8}
             onSnapToItem={(index) => {
               console.log('current index:', index);
             }}
             renderItem={({ imagem }, index) => {
               return (
+                <View style={estilo.carrosel}>
                 <ImageBackground
-                  source={ imagem }
+                  source={imagem}
                   style={estilo.fundoimg}
                   resizeMode="cover">
                 </ImageBackground>
+                </View>
               );
             }}
           />
         </View>
-      </ImageBackground>
+      </View>
+      <View style={estilo.container}>
+      <Text style={estilo.titulo}>Serviços</Text>
+      </View>
     </View>
 
 
