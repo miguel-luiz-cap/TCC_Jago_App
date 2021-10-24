@@ -20,11 +20,9 @@
     "react-native-gesture-handler": "~1.10.2",
     "@react-navigation/bottom-tabs": "*",
     "react-native-safe-area-context": "3.2.0",
-    "react-native-reanimated-carousel": "*",
-    "set-value": ">=3.0.1"
+    "react-native-reanimated-carousel": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "set-value": ">=3.0.1"
+    "@babel/core": "^7.9.0"
   }
 }
