@@ -21,10 +21,10 @@
     "@react-navigation/bottom-tabs": "*",
     "react-native-safe-area-context": "3.2.0",
     "react-native-reanimated-carousel": "*",
-    "set-value": ">=3.0.1"
+    "set-value": ">=4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "set-value": ">=3.0.1"
+    "set-value": ">=4.0.1"
   }
 }
