@@ -23,6 +23,7 @@
     "react-native-reanimated-carousel": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0"
+    "@babel/core": "^7.9.0",
+    "set-value": ">=4.0.1"
   }
 }
