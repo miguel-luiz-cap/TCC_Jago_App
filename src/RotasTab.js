@@ -4,8 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
-import Artista from './RotasButton';
-import Musica from './RotasButtonMusica';//from './pages/Musica';
+import Servicos from './pages/Servicos';
+import Menu from './StackNav';
 import Home from './pages/Home';
 
 const Tab = createBottomTabNavigator();
@@ -16,24 +16,43 @@ export default function Rotas() {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={{
-        tabBarActiveTintColor: '#000',
-        tabBarInactiveTintColor: '#FFFF00',
-        tabBarActiveBackgroundColor: '#F0F',
+        tabBarActiveTintColor: '#FF0',
+        tabBarInactiveTintColor: '#000',
+        tabBarActiveBackgroundColor: '#87CEEB',
         "tabBarStyle": [
           {
             "display": "flex",
-            backgroundColor: '#000'
+            //backgroundColor: '#87CEEB'
           },
           null
         ],
-        headerStyle: { backgroundColor: '#000', height: 80},
-        headerTintColor: '#FF0',
+        //headerStyle: { backgroundColor: '#000', height: 80},
+        //headerTintColor: '#FF0',
       }}>
+      
       <Tab.Screen
-        name="Home"
+        name="Serviços-tab"
+        component={Servicos}
+        options={{
+          tabBarLabel: 'Serviços',
+          title: 'Serviços',
+          showTitle: false,
+
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons
+              name="miscellaneous-services"
+              color={color}
+              size={size}
+            />
+          ),
+        }}
+      />
+     <Tab.Screen
+        name="Inicio-Tab"
         component={Home}
         options={{
-          
+          title: 'Início',
+          headerShown: false,
           tabBarLabel: 'Início',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
@@ -41,32 +60,14 @@ export default function Rotas() {
         }}
       />
       <Tab.Screen
-        name="Artistas-tab"
-        component={Artista}
+        name="Menu-tab"
+        component={Menu}
         options={{
-          tabBarLabel: 'Artistas',
-          title: 'Artistas',
-          showTitle: false,
-
+          tabBarLabel: 'Menu',
+          title: 'Menu',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
-              name="account-music"
-              color={color}
-              size={size}
-            />
-          ),
-        }}
-      />
-     
-      <Tab.Screen
-        name="Musica-tab"
-        component={Musica}
-        options={{
-          tabBarLabel: 'Música',
-          title: 'Música',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons
-              name="music"
+              name="menu"
               color={color}
               size={size}
             />
