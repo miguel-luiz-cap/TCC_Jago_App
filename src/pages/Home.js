@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Dimensions, ImageBackground, View, Text, StyleSheet } from 'react-native';
+import { Dimensions, ImageBackground, View, Text } from 'react-native';
 import Carousel from "react-native-reanimated-carousel";
 import estilo from '../../components/estilo';
-import ContatoBar from '../../components/contatoBar';
+//import ContatoBar from '../../components/contatoBar';
 
 const { width } = Dimensions.get('window');
 
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <><View style={estilo.container_azul}>
       <ImageBackground
-        source={require('../../assets/logo2.png')}
+        source={require('../../assets/logo3.png')}
         style={estilo.img_logo}
         resizeMode="cover">
       </ImageBackground>
@@ -49,7 +49,7 @@ export default function Home() {
             );
           } } />
       </View>
-    </View><ContatoBar /></>
+    </View></>
   );
 
 }

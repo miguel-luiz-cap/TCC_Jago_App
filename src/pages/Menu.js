@@ -13,12 +13,12 @@ const menu = [
   {
     uid: 2,
     nome: "Contato",
-    pagina: 'Sobre',
+    pagina: 'Contato',
   },
   {
     uid: 3,
     nome: "Login",
-    pagina: 'Sobre',
+    pagina: 'Login',
   },
 ]
 

@@ -4,6 +4,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Menu from './pages/Menu';
 import Sobre from './menuPages/Sobre';
+import Contato from './menuPages/Contato';
+import Login from './menuPages/Login';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +18,8 @@ export default function StackNav() {
     }}*/ >
       <Stack.Screen name='Menu' component={Menu} options = {{headerShown: false }}/>
       <Stack.Screen name='Sobre' component={Sobre} options = {{title: 'Sobre'}}/>
+      <Stack.Screen name='Contato' component={Contato} options = {{title: 'Contato'}}/>
+      <Stack.Screen name='Login' component={Login} options = {{title: 'Login'}}/>
     </Stack.Navigator>
   )
 }

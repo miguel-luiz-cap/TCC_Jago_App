@@ -15,6 +15,7 @@ export default function Sobre() {
                 como aéreo, ferroviário e aquaviário.</Text>
             <Text style={estilo.txtStyle}>JaGO está localizada em Guarulhos no estado de São Paulo.
                 Para mais informações nos sigam no Instagram e Facebook.</Text>
+
         </View><ContatoBar /></>
     );
 

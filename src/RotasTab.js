@@ -15,6 +15,7 @@ export default function Rotas() {
   return (
     <Tab.Navigator
       initialRouteName="Home"
+      
       screenOptions={{
         tabBarActiveTintColor: '#FF0',
         tabBarInactiveTintColor: '#000',
@@ -29,7 +30,19 @@ export default function Rotas() {
         //headerStyle: { backgroundColor: '#000', height: 80},
         //headerTintColor: '#FF0',
       }}>
-      
+      <Tab.Screen
+        name="Inicio-Tab"
+        component={Home}
+        
+        options={{
+          title: 'Início',
+          headerShown: false,
+          tabBarLabel: 'Início',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color={color} size={size} />
+          ),
+        }}
+      />
       <Tab.Screen
         name="Serviços-tab"
         component={Servicos}
@@ -47,18 +60,7 @@ export default function Rotas() {
           ),
         }}
       />
-     <Tab.Screen
-        name="Inicio-Tab"
-        component={Home}
-        options={{
-          title: 'Início',
-          headerShown: false,
-          tabBarLabel: 'Início',
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
-          ),
-        }}
-      />
+     
       <Tab.Screen
         name="Menu-tab"
         component={Menu}

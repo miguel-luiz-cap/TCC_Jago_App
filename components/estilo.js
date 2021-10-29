@@ -39,7 +39,7 @@ const estilo = StyleSheet.create({
     fontFamily: 'monospace',
   },
   subtitulo_home: {
-    color: '#FF0',
+    color: '#000',
     fontSize: 12,
     textAlign: 'center',
     fontWeight: 'bold',
@@ -75,8 +75,8 @@ const estilo = StyleSheet.create({
     borderColor: "#FFF",
   },
   img_logo: {
-    height: 100,
-    width: 100,
+    height: 120,
+    width: 120,
     textAlign: 'center',
     tintColor: "#FFF",
     marginTop: 35,
@@ -114,7 +114,7 @@ const estilo = StyleSheet.create({
     fontWeight: 'bold',
     margin: 10,
     padding: 10,
-    backgroundColor: "#00FFFF",
+    backgroundColor: "#60a3d9",
     opacity: 0.8,
     borderRadius: 20,
     //shadowColor: '#000',
@@ -141,5 +141,30 @@ const estilo = StyleSheet.create({
     height: 30,
     width: 30, 
   },
+  input: {
+    height: 40,
+    marginHorizontal: 15,
+    marginVertical: 12,
+    borderWidth: 1,
+    padding: 10,
+    backgroundColor: '#FFF',
+  },
+  form_title: {
+    fontWeight: 'bold',
+    fontSize: 18,
+    fontFamily: 'monospace',
+    marginHorizontal: 15,
+    marginTop: 10,
+  },
+  input_multiline: {
+    height: 100,
+    marginHorizontal: 15,
+    marginVertical: 12,
+    borderWidth: 1,
+    padding: 10,
+    backgroundColor: '#FFF',
+    maxHeight: 1000,
+    textAlignVertical: 'top',
+  }
 });
 export default estilo;

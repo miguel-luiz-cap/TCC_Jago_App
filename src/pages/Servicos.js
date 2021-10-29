@@ -33,10 +33,10 @@ export default function Servicos(props) {
   //const r = React.useRef(0);
   return (
     <View style={estilo.container}>
-      <Text style={estilo.titulo}>Serviços</Text>
-
       <FlatList
         data={servicos}
+        ListHeaderComponent={<Text style={estilo.titulo}>Serviços</Text>} // Titulo
+        ListFooterComponent={ContatoBar} // Rodape
         keyExtractor={(item) => {
           item.uid.toString();
         }}
@@ -60,7 +60,6 @@ export default function Servicos(props) {
           </LinearGradient>
         )}
       />
-      <ContatoBar />
     </View>
   );
 
