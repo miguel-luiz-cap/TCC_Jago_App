@@ -17,11 +17,13 @@ export default function Home() {
   //const r = React.useRef(0);
   return (
     <><View style={estilo.container_azul}>
+      <View style={estilo.img_logo_border}>
       <ImageBackground
-        source={require('../../assets/logo3.png')}
+        source={require('../../assets/logo.png')}
         style={estilo.img_logo}
         resizeMode="cover">
       </ImageBackground>
+      </View>
       <Text style={estilo.titulo_home}>JaGo</Text>
       <Text style={estilo.subtitulo_home}>Ready you go!</Text>
       <View style={estilo.blocoEstilo}>
@@ -39,11 +41,12 @@ export default function Home() {
           renderItem={({ imagem, texto }) => {
             return (
               <View style={estilo.carrosel}>
+                <View style={estilo.img_border}>
                 <ImageBackground
                   source={imagem}
                   style={estilo.img}
                   resizeMode="cover">
-                </ImageBackground>
+                </ImageBackground></View>
                 <Text style={estilo.txtHome}>{texto}</Text>
               </View>
             );

@@ -44,7 +44,7 @@ const estilo = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold',
     fontFamily: 'monospace',
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
   blocoEstilo: {
     maxWidth: 500,
@@ -59,6 +59,7 @@ const estilo = StyleSheet.create({
     fontSize: 30,
     textAlign: 'center',
     color: '#FFF',
+    marginTop: 15,
   },
   txtStyle: {
     fontSize: 15,
@@ -69,17 +70,25 @@ const estilo = StyleSheet.create({
   },
   img: {
     height: 260,
-    marginVertical: 20,
-    borderRadius: 3,
-    borderWidth: 2,
-    borderColor: "#FFF",
   },
   img_logo: {
-    height: 120,
-    width: 120,
+    height: 150,
+    width: 150,
     textAlign: 'center',
-    tintColor: "#FFF",
-    marginTop: 35,
+    textAlignVertical: 'center',
+    tintColor: '#FFF',
+  },
+  img_logo_border: {
+    padding: 40,
+    margin: 10,
+    height: 200,
+    width: 200,
+    //padding: 5,
+    backgroundColor: '#FFF',
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    borderRadius: 900,
   },
   card: {
     //shadowColor: '#000',
@@ -114,7 +123,7 @@ const estilo = StyleSheet.create({
     fontWeight: 'bold',
     margin: 10,
     padding: 10,
-    backgroundColor: "#60a3d9",
+    backgroundColor: '#60a3d9',
     opacity: 0.8,
     borderRadius: 20,
     //shadowColor: '#000',
@@ -132,14 +141,14 @@ const estilo = StyleSheet.create({
     alignItems: 'center',
     padding: 5,
     justifyContent: 'flex-end',
-    backgroundColor: "#FFE",
+    backgroundColor: '#FFE',
   },
   txt_contato: {
     fontSize: 10,
   },
   img_contato: {
     height: 30,
-    width: 30, 
+    width: 30,
   },
   input: {
     height: 40,
@@ -165,6 +174,14 @@ const estilo = StyleSheet.create({
     backgroundColor: '#FFF',
     maxHeight: 1000,
     textAlignVertical: 'top',
-  }
+  },
+  img_border: {
+    height: 270,
+    padding: 5,
+    //width: 32,
+    backgroundColor: '#FFF',
+    justifyContent: 'center',
+    borderRadius: 10,
+  },
 });
 export default estilo;
